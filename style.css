@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-light-grayish-blue);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+   
+}
+
+.notification-container {
+    background-color: var(--White);
+    padding: 1rem;
+    max-width: 47rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 30px var(--Very-dark-blue);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.counter {
+    border: none;
+    width: 2rem;
+    height: 1.5rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--Blue);
+}
+
+.avatar {
+    width: 3rem;
+    align-self: flex-start;
+    transition: 0.7s ease;
+}
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    color: var(--Dark-grayish-blue);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+} 
+.notification.active {
+    background-color: var(--Very-light-grayish-blue);
+}
+
+
+.mark-read {
+    color: var(--Dark-grayish-blue); 
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.mark-read:hover {
+    color: var(--Blue);
+}
+
+.notification-time {
+    color: var(--Grayish-blue);
+    margin-top: 0.4rem;
+}
+
+ .fa-circle {
+    color: var(--Red);
+    margin-left: 0.3rem;
+ }
+
+
+
+.message-box {
+    border: 1px solid var(--Light-grayish-blue-2);
+    max-width: 50rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    transition: 0.7s ease;
+   
+}
+
+.message-box:hover {
+    transform: scale(1.03);
+}
+
+.message-box p {
+    max-width: 100%;
+   
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.blue {
+    color: var(--Blue);
+}
+.black {
+    color: var(--Very-dark-blue);
+}
